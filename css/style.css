@@ -9,6 +9,13 @@ Donate to remove the back-link (webthemez.com) in this web template
 @import url('font-awesome.css');  
 @import url('animate.css');
 
+/* 로고 이미지의 위치를 조정하는 스타일 추가 */
+.logo-img {
+    position: absolute;  /* 위치 설정을 위해 relative 사용 */
+    top: 5px;           /* 원하는 높이로 조정 */
+    margin-top: 0;       /* 기존 여백 제거 */
+}
+
 body {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-size:14px;
@@ -80,8 +87,8 @@ header .navbar {
     font-weight: 700;
     line-height: 1em;
 	letter-spacing: -1px;
-    margin-top: 20px;
-    padding: 0 0 0 15px;
+    /*margin-top: 20px;*/
+    /*padding: 0 0 0 15px;*/
 }
 .navbar-default .navbar-brand{
 color: #2FADDE;
@@ -709,10 +716,6 @@ form#commentform textarea {
 	display: block;	
 }
 
-.work-nav #filters li a:hover {
-
-}
-
 .work-nav #filters li a.selected {
 	color: #DE5E60;
 }
@@ -980,8 +983,18 @@ ul.link-list li{
 	padding:2px 0 2px 0;
 	list-style:none;
 }
+.content_white{
+	background-color: #FF6347;
+}
+.content_white h2{
+	color:#fff
+}
+.content_white p{
+	color: #fff;
+}
+/*위에꺼 색깔*/
 footer{
-background: #046E5A;
+background: #FF6347;
 }
 footer ul.link-list li a{
 	color:#fff;
@@ -989,6 +1002,7 @@ footer ul.link-list li a{
 footer ul.link-list li a:hover {
 	color:#eee;
 }
+
 /* --- Heading style --- */
 
 h4.heading {
@@ -1199,9 +1213,6 @@ border: 1px solid #e6e6e6;
 	display:block;
 	color:#fff;
 }
-.pricing-box-item.activeItem .pricing-heading h3 {
-	 
-}
 
 .pricing-box-item .pricing-heading h3 strong {
 	font-size:28px;
@@ -1329,13 +1340,14 @@ ul.social-network li {
 	margin: 0 5px;
 }
 
+/* 밑에꺼 색깔 */
 #sub-footer{
 	text-shadow:none;
 	color:#f5f5f5;
 	padding:0;
 	padding-top:30px;
 	margin:20px 0 0 0;
-	background: #002821;
+	background: #B22222;
 }
 
 #sub-footer p{
@@ -1345,6 +1357,15 @@ ul.social-network li {
 
 #sub-footer span{
 	color:#f5f5f5;
+}
+
+#sub-footer .footer-links {
+    text-align: right; /* Aligns the links to the right */
+    float: right;      /* Ensures the links are placed on the right side */
+}
+
+#sub-footer .copyright {
+    float: left;       /* Keeps the copyright aligned to the left */
 }
 
 .copyright {
@@ -1445,7 +1466,7 @@ article img.pull-right, article .align-right{
 	float:right;
 	margin:5px 0 15px 15px;
 }
- ============================= */
+/* ============================= */
 
 .clear-marginbot{
 	margin-bottom:0;
@@ -1538,7 +1559,6 @@ color:#000;
     padding-left: 0;
   }
 	.navbar-brand {
-		margin-top: 10px;
 		border-bottom: none;
 	}
 	.navbar-header {
@@ -1665,7 +1685,7 @@ padding-top: 12px;
 	}
 
 
-	.search{
+	.search {
 		float:left;
 	}
 
@@ -1687,5 +1707,3 @@ padding-top: 12px;
 
 
 }
-
- 
